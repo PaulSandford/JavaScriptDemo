@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="icon" href="../Project Transition/logops.gif" type="image/x-icon">
+	<title>SD1340</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<link href="index.css" rel="stylesheet" type="text/css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+		
+	</script>
+	<script src="index.js" type="text/javascript" >
+		
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<canvas height="50" width="50" id="icon">
+		</canvas>
+		<script>
+			var icon = document.getElementById("icon");
+			var licon = icon.getContext("2d");
+	
+			licon.font = "30px Georgia";
+			licon.fillText("PS", 10, 35);
+		</script>
+		<div id="LHeader">Paul Sandford</div>
+
+	</header>
+	<nav>
+		<a href="">Home </a><button onclick="showHome()" id="homeS" >+</button>
+			<button onclick="hideHome()" id="homeH" class="home" >-</button><br>
+		<a href="" class="home">1<br></a>
+		<a href="" class="home">2<br></a>
+		<a href="" class="home">3<br></a>
+		<a href="">Contact</a><br>
+	</nav>
+	<main>
+		<form name="perspective" id="perspective" width="100%">
+			
+				<span>Tell us your perspective! </span>
+			
+			<section>
+				<span>Your Name:<input type="text" name="yname" id="yName" maxlength="16" ></span>
+				<span>Email:<input type="email" name="email" id="eMail"/></span>
+			</section>
+			<section>		
+				<span> Platform:</span>
+				<span> WiiU<input type="checkbox" name="platform" id="platForm" value=""></span>
+				<span> PS4<input type="checkbox" name="platform" id="platForm" value=""></span>
+				<span> XBoxOne<input type="checkbox" name="platform" id="platForm" value=""></span>
+				<span> PC<input type="checkbox" name="platform" id="platForm" value=""></span>
+			</section>
+			<section>
+				<span>How often do you play?</span>
+				<span>A little<input type="range" name="rating" id="raTing" min=1 max=10>A lot</span>
+			</section>
+			
+				<span> <input type="button" name="submit" value="Submit Review" 
+				onclick="yourPerspective()"></span>
+			
+		</form>
+		<div id="endform"></div>
+		
+		<div id="box" style="position:absolute;height:50px;width:50px;background:black;" >
+			<div id="top" style="width:50%;height:25%;;margin-left:auto;margin-right:auto;background:white;" onmouseover="down()">
+			</div>
+			<div id="left" style="height:50%;width:25%;float:left;margin-top:auto;margin-bottom:auto;background:white;" onmouseover="right()">
+			</div>
+			<div id="right" style="height:50%;width:25%;float:right;margin-top:auto;margin-bottom:auto;background:white;" onmouseover="left()">
+			</div>
+			<div id="bottom" style="width:50%;height:25%;margin-top:50%;margin-left:auto;margin-right:auto;background:white;" onmouseover="up()">
+			</div>
+		</div>
+	</main>
+	<div id="user">
+		<form name="gb" onsubmit="DisplayNames();">
+			Sign your name on our Guestbook!
+			<input type="text" name="newname" size="16" >
+			<input type="button" name="addname" value="Sign" onclick="DisplayNames();" >
+			<h3>Past Visitors</h3>
+				<label id="guests">
+				<script>			
+				</script>
+				</label>			
+		</form>
+	</div id="user">
+	<footer>
+		<ul type="none">
+			<li><a href="">Home</a></li>
+			<li><a href="">Contact Us</a></li>
+			<li><a href="">Careers</a></li>
+<!--		<form name="age">
+				<input type="date" name="bday">
+				<input type="button" name="subBday" value="agecheck" onclick="age();">
+			</form>
+-->		</ul>
+	</footer>
+</div id="wrapper">
+</body>
+
+</html>

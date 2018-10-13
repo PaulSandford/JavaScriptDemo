@@ -1,0 +1,137 @@
+/* Blanket CSS */
+
+body{
+	background-color:#009999;
+	padding:2em;
+}
+*{
+	word-wrap:break-word;
+	text-decoration:none;
+	
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+a:visited{
+	color:gray;
+}
+form{
+	border:thin solid silver;
+}
+
+span{
+	padding:5px;
+	position:relative;
+	
+}
+
+section{
+	margin:2px;
+	border:2px solid #009999;
+	position:relative;
+}
+
+ul{
+	list-style:none;
+}
+
+#wrapper{
+	margin-left:10%;margin-right:10%;min-width:300px;
+}
+
+/* Site Sections */
+
+header{
+	background-color:#66FFFF;
+	position:relative;
+	font-size:3em;
+	width:96%;padding:2%;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+
+nav{
+	background-color:#004A4A;
+	position:relative;float:left;
+	width:18%;padding:1%;
+	min-height:200px;
+}
+
+
+main{
+	background-color:#00FFFF;
+	position:relative;float:left;
+	width:58%;padding:1%;
+	min-height:200px;
+}
+
+#user{
+	background-color:#006F6F;
+	position:relative;float:left;
+	width:18%;padding:1%;
+	min-height:200px;
+}
+
+footer{
+	background-color:#66FFFF;
+	position:relative;float:left;clear:left;
+	width:96%;padding:2%;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+}
+
+footer ul{
+	align:center;
+}
+
+footer li{
+	float:left;
+	padding-left:10%;
+}
+/* Tag IDs and Classes */
+/*Header*/
+#icon{
+	float:left;
+	border:thin solid black;
+	margin-right:5px;
+}
+#LHeader{
+	
+}
+
+/* Main*/
+#perspective{
+	float:left;
+	width:100%;
+}
+#endform{
+	float:left;
+	width:100%;
+}
+/* Nav */
+.home{
+	text-indent:2em;
+}
+#homeH{
+	text-indent:0em;
+}
+
+@media only screen and (max-width:1000px){
+header{}
+nav{width:18%;padding:1%;}
+main{width:78%;padding:1%;}
+#user{width:96%;padding:2%;min-height:1em;}
+footer{}
+/*
+userH hides
+*/
+}
+
+@media only screen and (max-width:600px){
+header{}
+nav{width:96%;padding:2%;min-height:1em;}
+main{width:96%;padding:2%;}
+#user{}
+footer{}
+}

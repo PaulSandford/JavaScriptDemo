@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<style language="CSS3" type="text/css" >
+		#field{
+			background:green;
+			margin:50px;
+			height:500px;
+			width:1000px;
+			
+		}
+		#inbounds{
+			margin:50px;
+			height:40px;
+			width:900px;
+			
+			border:thin solid white;
+		}
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+	
+	</script>
+	<script language="JavaScript" type="text/javascript">
+		function right(){
+			$("#box").animate({
+				left: '+=20px'
+			});
+		}
+		function left(){
+			$("#box").animate({
+				left: '-=20px'
+			});
+		}
+		function down(){
+			$("#box").animate({
+				top: '+=20px'
+			});
+		}
+		function up(){
+			$("#box").animate({
+				top: '-=20px'
+			});
+		}	
+	</script>
+</head>
+<body>
+	<div id="field">
+		<div id="inbounds">
+			<div id="box" style="position:absolute;height:50px;width:50px;background:black;" >
+				<div id="top" style="width:50%;height:25%;;margin-left:auto;margin-right:auto;background:white;" onmouseover="down()">
+				</div>
+				<div id="left" style="height:50%;width:25%;float:left;margin-top:auto;margin-bottom:auto;background:white;" onmouseover="right()">
+				</div>
+				<div id="right" style="height:50%;width:25%;float:right;margin-top:auto;margin-bottom:auto;background:white;" onmouseover="left()">
+				</div>
+				<div id="bottom" style="width:50%;height:25%;margin-top:50%;margin-left:auto;margin-right:auto;background:white;" onmouseover="up()">
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+
+</html> 
